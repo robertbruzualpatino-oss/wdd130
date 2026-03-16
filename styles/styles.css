@@ -18,6 +18,8 @@
 body {
     font-family: var(--body-font);
     color: var(--text-color);
+    padding-bottom: 50px;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -29,6 +31,7 @@ h2 {
 .herodiv {
     border-radius: var(--border-radius);
     padding: var(--padding-std);
+    box-sizing: border-box;
 }
 
 footer {
