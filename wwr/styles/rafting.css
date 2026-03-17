@@ -9,7 +9,6 @@
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --overlay-bg: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -48,6 +47,10 @@ article {
     text-decoration: none;
 }
 
+a {
+    color: var(--primary-color);
+}
+
 .hero {
     position: relative;
 }
@@ -68,25 +71,31 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
     /* white text - make sure there is enough contrast with the background-color */
+    margin: 0;
 }
 
 .hero article {
     position: absolute;
     bottom: 30px;
-    right: 5%;
-    left: 5%;
-    background-color: var(--overlay-bg);
+    right: 30px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #fff;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
+    margin-left: 15px;
+    border: 2 solid var(--accent2-color);
 }
 
-.hero article p {
-    margin: 0;
-    line-height: 1.6;
+.hero article::after {
+    content: "";
+    display: table;
+    clear: both;
 }
