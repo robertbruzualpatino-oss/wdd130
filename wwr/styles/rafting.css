@@ -48,7 +48,7 @@ article {
 }
 
 a {
-    color: var(--secondary-color);
+    color: #a65d22;
 }
 
 .hero {
@@ -79,7 +79,7 @@ h1 {
     bottom: 30px;
     right: 30px;
     width: 60%;
-    background-color: rgba(255 255 255 / 80%);
+    background-color: var(--accent1-color);
     color: #fff;
     padding: 20px;
     border-radius: 8px;
