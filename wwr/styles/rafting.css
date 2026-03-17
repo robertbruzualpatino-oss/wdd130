@@ -43,14 +43,6 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-a {
-    color: #a65d22;
-}
-
 .hero {
     position: relative;
 }
@@ -61,7 +53,7 @@ a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -98,4 +90,19 @@ h1 {
     content: "";
     display: table;
     clear: both;
+
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
